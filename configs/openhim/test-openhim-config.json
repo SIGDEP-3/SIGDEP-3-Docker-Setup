@@ -160,6 +160,16 @@
       "roles": [
         "opencr"
       ],
+      "clientID": "OpenELis",
+      "name": "Open Laboratory Information System",
+      "passwordAlgorithm": "sha512",
+      "passwordSalt": "020f609eef89ee2bb29b94089d717a9b",
+      "passwordHash": "efb76c5b03d01b09c3e12216697c8d37d008f7246d186b155b1c1c772d0a0cc0f69f45512343c08ebca7c9bcb7caf3bdf9ff6dc54aa135bd3920c66e8119e553"
+    },
+    {
+      "roles": [
+        "opencr"
+      ],
       "clientID": "CHR_PUBLIC_de_KORHOGO",
       "name": "CHR PUBLIC de KORHOGO",
       "passwordAlgorithm": "sha512",
