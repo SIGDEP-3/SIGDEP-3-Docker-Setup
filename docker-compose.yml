@@ -195,7 +195,7 @@ services:
   # Loads Default OpenHIM Config
   openhim-config:
     container_name: openhim-config
-    image: ghcr.io/i-tech-uw/openhim-config:v0.0.0
+    image: ghcr.io/digi-uw/openhim-config:v0.0.0
     volumes:
       - ./configs/openhim/test-openhim-config.json:/app/test-openhim-config.json
     networks:
@@ -316,7 +316,7 @@ services:
   wait-for-openmrs:
     profiles: ['utility']
     container_name: wait-for-openmrs
-    image: ghcr.io/i-tech-uw/wait-for-openmrs-action:latest 
+    image: ghcr.io/digi-uw/wait-for-openmrs-action:latest 
     command:
     - "http://sigdep3:8080/openmrs"
     - "20" 
@@ -371,7 +371,7 @@ services:
   ####
   certs:
     container_name: oe-certs
-    image: ghcr.io/i-tech-uw/certgen:main
+    image: ghcr.io/digi-uw/certgen:main
     restart: always
     environment:
       - KEYSTORE_PW="kspass"
@@ -404,7 +404,7 @@ services:
 
   oe.openelis.org:
     container_name: openelisglobal-webapp
-    image: ghcr.io/i-tech-uw/openelis-global-2:2.7.1.1
+    image: ghcr.io/digi-uw/openelis-global-2:2.7.1.1
     depends_on:
       - database
     ports:
